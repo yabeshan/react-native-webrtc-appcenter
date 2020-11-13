@@ -84,45 +84,7 @@ export default class Info extends React.Component {
           contentContainerStyle={styles.scrollViewContent}
           style={styles.scrollView}
         >
-          <View style={styles.formControlView}>
-            <Label>Chat Sample version</Label>
-            <Field value={json.version} />
-          </View>
-          <View style={styles.formControlView}>
-            <Label>React Native SDK version</Label>
-            <Field value={QBjson.version} />
-          </View>
-          <View style={styles.formControlView}>
-            <Label>QuickBlox SDK Version</Label>
-            <Field value={sdkVersion} />
-          </View>
-          <View style={styles.formControlView}>
-            <Label>Application ID</Label>
-            <Field value={appId} />
-          </View>
-          <View style={styles.formControlView}>
-            <Label>Authorization key</Label>
-            <Field value={authKey} />
-          </View>
-          <View style={styles.formControlView}>
-            <Label>Authorization secret</Label>
-            <Field value={authSecret} />
-          </View>
-          <View style={styles.formControlView}>
-            <Label>Account key</Label>
-            <Field value={accountKey} />
-          </View>
-          <View style={styles.formControlView}>
-            <Label>API endpoint</Label>
-            <Field value={apiEndpoint} />
-          </View>
-          <View style={styles.formControlView}>
-            <Label>Chat endpoint</Label>
-            <Field value={chatEndpoint} />
-          </View>
-          <View style={styles.logoView}>
-            <Image style={styles.logoImage} source={LOGO} />
-          </View>
+          
         </ScrollView>
       </SafeAreaView>
     )

@@ -34,8 +34,8 @@ const emailRegex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-
 
 export default class Login extends React.Component {
 
-  LOGIN_HINT = 'Use your email or alphanumeric characters in a range from 3 to 50. First character must be a letter.'
-  USERNAME_HINT = 'Use alphanumeric characters and spaces in a range from 3 to 20. Cannot contain more than one space in a row.'
+  LOGIN_HINT = 'example: user1@qwe.qwe'
+  USERNAME_HINT = 'example: User1'
 
   static navigationOptions = ({ navigation }) => ({
     title: 'Enter to videochat',
@@ -144,9 +144,6 @@ export default class Login extends React.Component {
           contentContainerStyle={{ alignItems: 'center' }}
           style={styles.scrollView}
         >
-          <View style={{ width: '50%' }}>
-            <Header>Please enter your login and username</Header>
-          </View>
           <View style={styles.formControlView}>
             <Label>Login</Label>
             <Field
